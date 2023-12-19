@@ -1,1 +1,1 @@
-# liufanjin.github-io
+# 一个使用占星骰子来占卜的网站
