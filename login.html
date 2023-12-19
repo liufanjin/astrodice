@@ -20,27 +20,65 @@ firebase.initializeApp(firebaseConfig);
 </script>
 
 <style>
-      .center-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        flex-direction: column;
-      }
-      body {
-        color: white;
-        margin: 0;
-        padding: 0;
-        /* 图片文件路径 */
-        background-image: url('background.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+body {
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  /* 图片文件路径 */
+  background-image: url('background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.boxed-content {
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(159, 159, 159, 0.7);
+  max-width: 600px;
+  text-align: center;
+}
+/* 输入框样式 */
+input[type="email"], input[type="password"]{
+    width: 80%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type="email"]:focus, input[type="password"]:focus{
+    border: 1px solid #555;
+}
+
+/* 按钮样式 */
+input[type="button"]{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #007B9A;
+}
 </style>
 </head>
 <body>
 <div class="center-content">
+  <div class="boxed-content">
 <h2>登录表单</h2>
 <form>
   电子邮箱:<br>
@@ -70,6 +108,7 @@ function check() {
       });
   }
 </script>
+  </div>
 </div>
 </body>
 </html>
