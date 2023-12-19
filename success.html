@@ -16,7 +16,7 @@
         margin: 0;
         padding: 0;
         /* 图片文件路径 */
-        background-image: url('background.jpg');
+        background-image: url('background.png');
         background-size: cover;
         background-repeat: no-repeat;
       }
@@ -25,8 +25,8 @@
 
 <body>
 <div class="center-content">
-  <h1>Welcome,<span id="username"></span></h1>
-  <button onclick="generateRandomImageData()">点击生成图像</button>
+  <h1><span id="username"></span>,欢迎使用占星骰子,请搭配说明文档使用</h1>
+  <button onclick="generateRandomImageData()">点击投掷占星骰子</button>
   <div id="image-container">
     <!-- 图片将会在这里动态显示 -->
   </div>
@@ -35,6 +35,34 @@
   </div>
 </div>
 <script src="success.js"></script>
+</body>
+
+<head>
+  <style>
+    .top-right{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    .button{
+      margin-left: 20px;
+      padding: 10px 20px;
+      background-color: #0b0be9;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-right">
+    <a href="login.html" class="button">返回登录页面</a>
+    <a href="document.pdf" class="button">查看说明文档</a>
+  </div>
 </body>
 
 </html>
