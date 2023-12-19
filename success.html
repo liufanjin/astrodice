@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Success</title>
+  <style>
+    .center-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      body {
+        color: white;
+        margin: 0;
+        padding: 0;
+        /* 图片文件路径 */
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+  </style>
+</head>
+
+<body>
+<div class="center-content">
+  <h1>Welcome,<span id="username"></span></h1>
+  <button onclick="generateRandomImageData()">点击生成图像</button>
+  <div id="image-container">
+    <!-- 图片将会在这里动态显示 -->
+  </div>
+  <div id="text-container">
+    <!-- 文本将会在这里动态显示 -->
+  </div>
+</div>
+<script src="success.js"></script>
+</body>
+
+</html>
