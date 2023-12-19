@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Register</title>
+    <style>
+      .center-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      body {
+        color: white;
+        margin: 0;
+        padding: 0;
+        /* 图片文件路径 */
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+</head>
+
+<body>
+<div class="center-content">
+<h2>注册表单</h2>
+<form>
+  用户名:<br>
+  <input type="text" id="new_username" name="new_username">
+  <br>
+  密码:<br>
+  <input type="password" id="new_password" name="new_password">
+  <br><br>
+  <input type="button" value="注册" onclick="store()">
+  <p><a href="login.html">已有账号？点击这里登录</a></p>
+</form>
+<script src="login.js"></script>
+</div>
+</body>
+
+</html>
