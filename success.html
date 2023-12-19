@@ -3,6 +3,31 @@
 
 <head>
 <title>Astrodice</title>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+
+<script>
+var firebaseConfig = {
+  apiKey: "AIzaSyCyY3jPVPU2A06mi4shZ6sNWkuSEiq_Oy0",
+  authDomain: "astrodice-3ca5c.firebaseapp.com",
+  projectId: "astrodice-3ca5c",
+  storageBucket: "astrodice-3ca5c.appspot.com",
+  messagingSenderId: "1034358300080",
+  appId: "1:1034358300080:web:691200972a53c82fd94a75",
+  measurementId: "G-7KVZT9LCYG"
+};
+firebase.initializeApp(firebaseConfig);
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (!user) {
+    // 如果用户没有登录，重定向到登录页面
+    window.location.href = 'login.html';
+  } 
+});
+
+</script>
+
   <style>
     .center-content {
         display: flex;
